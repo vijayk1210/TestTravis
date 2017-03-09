@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Mar 08 13:21:47 IST 2017</td>
+<td>Started on:</td><td>Thu Mar 09 13:54:08 IST 2017</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (8 ms)</td>
+<tr><td>Total time:</td><td>4 seconds (4911 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,7 +75,7 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='TestCases.MyAccount12398_02_e.afterEachTestMethod()'><b>afterEachTestMethod</b><br>Test class: TestCases.MyAccount12398_02_e<br>Parameters: [TestResult name=verifyWishList status=FAILURE method=MyAccount12398_02_e.verifyWishList()[pri:0, instance:TestCases.MyAccount12398_02_e@2aec7bcd] output={null}]</td>
+<td title='TestCases.MyAccount12398_02_e.afterEachTestMethod()'><b>afterEachTestMethod</b><br>Test class: TestCases.MyAccount12398_02_e<br>Parameters: [TestResult name=verifyWishList status=FAILURE method=MyAccount12398_02_e.verifyWishList()[pri:0, instance:TestCases.MyAccount12398_02_e@4e3d24d8] output={null}]</td>
 <td><div><pre>java.lang.NullPointerException
 	at com.relevantcodes.extentreports.ExtentTest.isPathRelative(ExtentTest.java:491)
 	at com.relevantcodes.extentreports.ExtentTest.addScreenCapture(ExtentTest.java:276)
@@ -107,8 +107,8 @@ function toggleAllBoxes() {
 	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:230)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:409)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:352)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace178775556", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace178775556'><pre>java.lang.NullPointerException
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace920217821", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace920217821'><pre>java.lang.NullPointerException
 	at com.relevantcodes.extentreports.ExtentTest.isPathRelative(ExtentTest.java:491)
 	at com.relevantcodes.extentreports.ExtentTest.addScreenCapture(ExtentTest.java:276)
 	at Utility.Base.afterEachTestMethod(Base.java:154)
@@ -172,7 +172,7 @@ function toggleAllBoxes() {
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:352)
 </pre></div></td>
 <td>0</td>
-<td>TestCases.MyAccount12398_02_e@2aec7bcd</td></tr>
+<td>TestCases.MyAccount12398_02_e@4e3d24d8</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
@@ -183,7 +183,24 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='TestCases.MyAccount12398_02_e.verifyWishList()'><b>verifyWishList</b><br>Test class: TestCases.MyAccount12398_02_e</td>
-<td><div><pre>java.lang.NullPointerException
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=56.0.2924.87)
+  (Driver info: chromedriver=2.24.417431 (9aea000394714d2fbb20850021f6204f2256b9cf),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;WV652&apos;, ip: &apos;192.168.3.8&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.7.0_75&apos;
+*** Element info: {Using=xpath, value=//a[@class = &apos;login&apos;]/span}
+Session ID: 56115f64280c8098d45ae4d40686f0cd
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=WIN8_1, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\VIJAYK~1\AppData\Local\Temp\scoped_dir4204_330, chromedriverVersion=2.24.417431 (9aea000394714d2fbb20850021f6204f2256b9cf)}, networkConnectionEnabled=false, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=56.0.2924.87, pageLoadStrategy=normal, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, hasTouchScreen=false, applicationCacheEnabled=false, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
 	at Utility.util.clickByXpath(util.java:80)
 	at applicationUtility.appFunctions.navigateToProductDetailPage(appFunctions.java:163)
 	at TestCases.MyAccount12398_02_e.verifyWishList(MyAccount12398_02_e.java:25)
@@ -214,8 +231,29 @@ function toggleAllBoxes() {
 	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:230)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:409)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:352)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2002625054", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2002625054'><pre>java.lang.NullPointerException
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace272228451", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace272228451'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=56.0.2924.87)
+  (Driver info: chromedriver=2.24.417431 (9aea000394714d2fbb20850021f6204f2256b9cf),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;WV652&apos;, ip: &apos;192.168.3.8&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.7.0_75&apos;
+*** Element info: {Using=xpath, value=//a[@class = &apos;login&apos;]/span}
+Session ID: 56115f64280c8098d45ae4d40686f0cd
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=WIN8_1, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\VIJAYK~1\AppData\Local\Temp\scoped_dir4204_330, chromedriverVersion=2.24.417431 (9aea000394714d2fbb20850021f6204f2256b9cf)}, networkConnectionEnabled=false, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=56.0.2924.87, pageLoadStrategy=normal, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, hasTouchScreen=false, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
 	at Utility.util.clickByXpath(util.java:80)
 	at applicationUtility.appFunctions.navigateToProductDetailPage(appFunctions.java:163)
 	at TestCases.MyAccount12398_02_e.verifyWishList(MyAccount12398_02_e.java:25)
@@ -277,7 +315,7 @@ function toggleAllBoxes() {
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:352)
 </pre></div></td>
 <td>0</td>
-<td>TestCases.MyAccount12398_02_e@2aec7bcd</td></tr>
+<td>TestCases.MyAccount12398_02_e@4e3d24d8</td></tr>
 </table><p>
 </body>
 </html>
