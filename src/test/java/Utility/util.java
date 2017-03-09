@@ -66,7 +66,7 @@ public class util extends Base {
 		String filePath=null;
 		try{
             File scrnFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            filePath  = "Screenshots/"+screenshotName+".png";
+            filePath  = "Screenshots//"+screenshotName+".png";
             FileUtils.copyFile(scrnFile, new File(filePath));
             
     }catch(Exception e){
