@@ -148,12 +148,12 @@ public class Base extends PageObjects {
         if (result.getStatus() == 1) {
             ExtentTestManager.getTest().log(LogStatus.PASS, "Test Passed");  // new
         } else if (result.getStatus() == 2) {
-         String path = util.getscreenshot(driver, result.getName());
+        // String path = util.getscreenshot(driver, result.getName());
            // ExtentTestManager.getTest().log(LogStatus.FAIL, getStackTrace(result.getThrowable()));  // new
-            String image = ExtentTestManager.getTest().addScreenCapture(path);
+           // String image = ExtentTestManager.getTest().addScreenCapture(path);
         	ExtentTestManager.getTest().log(LogStatus.FAIL,getStackTrace(result.getThrowable()));
-        	ExtentTestManager.getTest().log(LogStatus.FAIL,image);
-        	driver.get(path);
+        	//ExtentTestManager.getTest().log(LogStatus.FAIL,image);
+        	//driver.get(path);
         } else if (result.getStatus() == 3) {
             ExtentTestManager.getTest().log(LogStatus.SKIP, "Test Skipped");  // new
         }
