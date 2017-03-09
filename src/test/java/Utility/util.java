@@ -196,11 +196,11 @@ public class util extends Base {
     	return st1;
     }
 
-    public void screenshot(String pagename) throws IOException{
+   /* public void screenshot(String pagename) throws IOException{
     	File srcfile =((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
     	FileUtils.copyFile(srcfile, new File("C:\\Users\\nitin\\Desktop\\Testing Report\\Whole Site Test Cases\\Automated Test Cases\\12950\\"+pagename+".png"));
 
-    }
+    }*/
 
     public static String replacecharachter(String s){
     	String numberOnly= s.replaceAll("[^0-9]", "");
