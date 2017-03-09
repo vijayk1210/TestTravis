@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Suite1]">
+  <test name="wishlistGui(failed)">
+    <classes>
+      <class name="Utility.Base">
+        <methods>
+          <include name="generateReport"/>
+          <include name="extentSetup"/>
+        </methods>
+      </class> <!-- Utility.Base -->
+      <class name="TestCases.WishlistGUI">
+        <methods>
+          <include name="initializeTestBaseSetup"/>
+          <include name="afterEachTestMethod"/>
+          <include name="verifyfilledWishlist"/>
+        </methods>
+      </class> <!-- TestCases.WishlistGUI -->
+    </classes>
+  </test> <!-- wishlistGui(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

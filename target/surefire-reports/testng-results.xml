@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite1" duration-ms="54710" started-at="2016-12-14T10:09:04Z" finished-at="2016-12-14T10:09:58Z">
+    <groups>
+    </groups>
+    <test name="wishlistGui" duration-ms="54710" started-at="2016-12-14T10:09:04Z" finished-at="2016-12-14T10:09:58Z">
+      <class name="Utility.Base">
+        <test-method status="PASS" signature="extentSetup(org.testng.ITestContext)[pri:0, instance:Utility.Base@7ee28774]" name="extentSetup" is-config="true" duration-ms="124" started-at="2016-12-14T15:39:04Z" finished-at="2016-12-14T15:39:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@79151e8e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentSetup -->
+        <test-method status="PASS" signature="generateReport()[pri:0, instance:Utility.Base@7ee28774]" name="generateReport" is-config="true" duration-ms="57" started-at="2016-12-14T15:39:58Z" finished-at="2016-12-14T15:39:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+      </class> <!-- Utility.Base -->
+      <class name="TestCases.WishlistGUI">
+        <test-method status="PASS" signature="initializeTestBaseSetup(java.lang.reflect.Method)[pri:0, instance:TestCases.WishlistGUI@2147d4bb]" name="initializeTestBaseSetup" is-config="true" duration-ms="15321" started-at="2016-12-14T15:39:04Z" finished-at="2016-12-14T15:39:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestCases.WishlistGUI.verifyfilledWishlist()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeTestBaseSetup -->
+        <test-method status="PASS" signature="verifyfilledWishlist()[pri:0, instance:TestCases.WishlistGUI@2147d4bb]" name="verifyfilledWishlist" duration-ms="38490" started-at="2016-12-14T15:39:19Z" finished-at="2016-12-14T15:39:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyfilledWishlist -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:TestCases.WishlistGUI@2147d4bb]" name="afterEachTestMethod" is-config="true" duration-ms="890" started-at="2016-12-14T15:39:58Z" finished-at="2016-12-14T15:39:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyfilledWishlist status=SUCCESS method=WishlistGUI.verifyfilledWishlist()[pri:0, instance:TestCases.WishlistGUI@2147d4bb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+      </class> <!-- TestCases.WishlistGUI -->
+    </test> <!-- wishlistGui -->
+  </suite> <!-- Suite1 -->
+</testng-results>
