@@ -33,7 +33,7 @@ public class util extends Base {
 	public static String getConfigValue(String key){
 		String val=null;
 		try {
-			reader = new FileReader("E:\\workspace\\HomeSofa\\config.properties");
+			reader = new FileReader("config.properties");
 			properties = new Properties();
 			properties.load(reader);
 			val = properties.getProperty(key);
@@ -66,7 +66,7 @@ public class util extends Base {
 		String filePath=null;
 		try{
             File scrnFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            filePath  = "E:\\workspace\\HomeSofa\\Screenshots\\"+screenshotName+".png";
+            filePath  = "Screenshots\\"+screenshotName+".png";
             FileUtils.copyFile(scrnFile, new File(filePath));
             
     }catch(Exception e){
