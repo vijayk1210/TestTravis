@@ -100,8 +100,7 @@ public class Base extends PageObjects {
 
     private static WebDriver launchChromeDriver(String appURL) {
     	ExtentTestManager.getTest().log(LogStatus.INFO, "Launching Chrome browser"); 
-    	System.setProperty("webdriver.chrome.driver", "E:\\workspace\\HomeSofa\\"
-		+ "chromedriver.exe");
+    	System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
