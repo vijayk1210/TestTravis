@@ -64,9 +64,11 @@ public class util extends Base {
 	public static String getscreenshot(WebDriver driver,String screenshotName)
     {    
 		String filePath=null;
+		String path = new File("HomeSofa/Screenshots/").getAbsolutePath();
+       
 		try{
             File scrnFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            filePath  = "Screenshots\\"+screenshotName+".png";
+            filePath  = path+screenshotName+".png";
             FileUtils.copyFile(scrnFile, new File(filePath));
             
     }catch(Exception e){
