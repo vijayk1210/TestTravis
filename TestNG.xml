@@ -252,7 +252,7 @@
     </test> 
    
  <!-- Sikuli Test cases -->
-    
+  <!--    
   <test name="homePageGui" >
     <classes>
        <class name="Utility.Base" />
@@ -306,5 +306,5 @@
        </classes>
     
     </test>
-    
+  -->   
 </suite>
