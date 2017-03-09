@@ -119,8 +119,8 @@ public class Base extends PageObjects {
 	public void initializeTestBaseSetup(Method method) {
 		try {
 			 ExtentTestManager.startTest(method.getName());
-			// setDriver(browser, util.getConfigValue("appUrl"));
-			 setGridDriver();
+			 setDriver(browser, util.getConfigValue("appUrl"));
+			// setGridDriver();
 
 		} catch (Exception e) {
 			System.out.println("Error....." + e.getStackTrace());
